@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { View, FlatList, TouchableOpacity, Text } from 'react-native';
-import OnboardingSlide from '../../components/OnboardingSlide';
+import OnboardingSlide from '../../components/OnboardingSlide/OnboardingSlide.js';
 import slides from '../../constants/onboardingData';
 // style
 import styles from './Onboarding.styles.js';

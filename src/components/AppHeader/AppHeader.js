@@ -14,6 +14,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const AppHeader = ({ variant = 'home', title = 'Acompanhar' }) => {
   const navigation = useNavigation();
 
+  const navigateToProfile = () => {
+    navigation.navigate('Profile'); 
+  };
+
   return (
     <View style={styles.headerContainer}>
       {/* Coloca o conteúdo do cabeçalho dentro da área segura */}
@@ -23,7 +27,11 @@ const AppHeader = ({ variant = 'home', title = 'Acompanhar' }) => {
         {/* Variante "Home" (Tela 1) */}
         {variant === 'home' && (
           <View style={styles.contentContainer}>
-            <View style={styles.profileContainer}>
+            <TouchableOpacity 
+              style={styles.profileContainer} 
+              onPress={navigateToProfile} 
+              activeOpacity={0.8}         
+            >
               <Image
                 source={require('../../../assets/images/avatar-placeholder.png')} 
                 style={styles.avatar}
@@ -32,7 +40,7 @@ const AppHeader = ({ variant = 'home', title = 'Acompanhar' }) => {
                 <Text style={styles.profileName}>Rodrigo Silva • Silva</Text>
                 <Text style={styles.profilePhone}>(83) 9 9186-4312 • Sousa-PB</Text>
               </View>
-            </View>
+            </TouchableOpacity>
             <TouchableOpacity style={styles.iconButton}>
               <Ionicons name="notifications-outline" size={24} color={styles.icon.color} />
             </TouchableOpacity>
