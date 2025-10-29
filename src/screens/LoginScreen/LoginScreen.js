@@ -23,8 +23,7 @@ const LoginScreen = ({ navigation }) => {
     // API 
     // Simulate
     console.log('Login com:', { username, password });
-    Alert.alert('Login', 'Login efetuado com sucesso! (simulação!!)');
-    // navigation.replace('HomeStack'); 
+    navigation.replace('HomeScreen'); 
   };
 
   const handleForgotPassword = () => {

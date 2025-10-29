@@ -6,12 +6,14 @@ import LoginScreen from '../screens/LoginScreen/LoginScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen/ForgotPasswordScreen';
 import ResetPasswordScreen from '../screens/ResetPasswordScreen/ResetPasswordScreen';
 import SuccessScreen from '../screens/SuccessScreen/SuccessScreen';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
   return (
     <NavigationContainer>
+
       <Stack.Navigator 
       initialRouteName="Onboarding"
       screenOptions={{
@@ -43,7 +45,13 @@ const AppNavigator = () => {
         component={SuccessScreen} 
         />
 
+        <Stack.Screen 
+        name="HomeScreen" 
+        component={HomeScreen} 
+        />
+
       </Stack.Navigator>
+
     </NavigationContainer>
   );
 };
