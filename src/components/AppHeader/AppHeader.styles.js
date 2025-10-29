@@ -42,6 +42,13 @@ const styles = StyleSheet.create({
     color: COLORS.headerText,
   },
   iconButton: {
+    backgroundColor: COLORS.background,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 3,
     padding: 8, 
   },
   icon: {
