@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  SafeAreaView, 
   View, 
   Text, 
   TouchableOpacity, 
@@ -14,7 +13,7 @@ import AppButton from '../../components/AppButton/AppButton';
 
 // styles
 import styles from './LoginScreen.styles';
-import { COLORS } from '../../constants/colors';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const LoginScreen = ({ navigation }) => {
   const [username, setUsername] = useState('');

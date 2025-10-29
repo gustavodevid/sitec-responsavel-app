@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  SafeAreaView, 
+import {
   View, 
   Text, 
   Image, 
@@ -11,6 +10,7 @@ import AppTextInput from '../../components/AppTextInput/AppTextInput';
 import AppButton from '../../components/AppButton/AppButton';
 
 import styles from './ResetPasswordScreen.styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 /**
  * Tela de Definição da Nova Senha

@@ -1,6 +1,5 @@
 import React from 'react';
 import { 
-  SafeAreaView, 
   View, 
   Text, 
   Image,
@@ -9,8 +8,8 @@ import {
 
 import AppButton from '../../components/AppButton/AppButton';
 
-
 import styles from './SuccessScreen.styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 /**
  * Tela final de Sucesso na Redefinição de Senha.

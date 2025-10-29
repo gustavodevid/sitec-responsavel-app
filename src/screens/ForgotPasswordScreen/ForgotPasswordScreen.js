@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { 
-  SafeAreaView, 
+import {
   View, 
   Text, 
   TextInput, 
@@ -12,6 +11,7 @@ import AppButton from '../../components/AppButton/AppButton';
 
 // styles
 import styles from './ForgotPasswordScreen.styles';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // maskarade email
 const maskEmail = (email) => {
