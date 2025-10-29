@@ -1,6 +1,5 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { COLORS } from '../../constants/colors';
 import styles from './Button.styles';
 
 const Button = ({ title, onPress, style, textStyle }) => {

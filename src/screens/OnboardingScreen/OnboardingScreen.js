@@ -6,6 +6,7 @@ import slides from '../../constants/onboardingData';
 import styles from './Onboarding.styles.js';
 //Reuse button
 import Button from '../../components/Button/Button.js';
+import AppButton from '../../components/AppButton/AppButton.js';
 
 const OnboardingScreen = ({ navigation }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,10 +75,12 @@ const OnboardingScreen = ({ navigation }) => {
           <TouchableOpacity onPress={skipOnboarding} style={styles.skipButton}>
             <Text style={styles.skipButtonText}>Pular</Text>
           </TouchableOpacity>
+          
           <Button
-            title={isLastSlide ? 'Começar' : 'Próximo >'}
+            title={isLastSlide ? 'Começar' : 'Próximo'}
             onPress={scrollToNext}
           />
+
         </View>
       </View>
     </View>

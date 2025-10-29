@@ -15,7 +15,7 @@ export const COLORS = {
   authPrimaryText: '#1E9544', // text button
 
   authSecondary: '#FFF4DA', // button "Entrar"
-  authSecondaryText: '##EDA800', // text "Entrar"
+  authSecondaryText: '#EDA800', // text "Entrar"
 
   textLabel: '#6C6C6C',     //  label ("Usuário:", "Senha:")
   textLink: '#EDA800',      // label "Esqueci a senha"
