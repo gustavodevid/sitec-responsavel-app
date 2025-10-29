@@ -29,10 +29,7 @@ const LoginScreen = ({ navigation }) => {
   };
 
   const handleForgotPassword = () => {
-    // Navega para a próxima tela do fluxo
-    console.log('Navegando para Redefinição de Senha');
-    // navigation.navigate('ForgotPassword');
-    Alert.alert('Navegação', 'Indo para "Esqueci a senha" (simulação)');
+    navigation.navigate('ForgotPassword', { email: username });
   };
 
   return (
