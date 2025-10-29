@@ -5,7 +5,7 @@ import slides from '../../constants/onboardingData';
 // style
 import styles from './Onboarding.styles.js';
 //Reuse button
-import Button from '../../components/Button';
+import Button from '../../components/Button/Button.js';
 
 const OnboardingScreen = ({ navigation }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

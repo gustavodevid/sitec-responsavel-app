@@ -1,4 +1,5 @@
 export const COLORS = {
+  // onboarding screen
   background: '#FFFFFF',
   textTitle: '#333333',
   textDescription: '#666666',
@@ -9,4 +10,17 @@ export const COLORS = {
   textSkip: '#888888',   
   textLight: '#FFFFFF', 
   textDark: '#333333',
+  // Auth screen
+  authPrimary: '#B6FFC7', // buttons "Validar", "Continuar"
+  authPrimaryText: '#1E9544', // text button
+
+  authSecondary: '#FFF4DA', // button "Entrar"
+  authSecondaryText: '##EDA800', // text "Entrar"
+
+  textLabel: '#6C6C6C',     //  label ("Usuário:", "Senha:")
+  textLink: '#EDA800',      // label "Esqueci a senha"
+  textSuccess: '#33C455',   // text "Senha redefinida com sucesso"
+
+  inputBorder: '#E0E0E0',
+  inputBackground: '#FAFAFA',
 };
