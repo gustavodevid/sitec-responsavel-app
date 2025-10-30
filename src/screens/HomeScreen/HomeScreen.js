@@ -25,9 +25,7 @@ const HomeScreen = ({ navigation }) => {
 
   // Função para lidar com o clique num item da lista
   const handleItemPress = (item) => {
-    console.log('Navegando para os detalhes de:', item.name);
-    // Navega para a tela de detalhes, passando o nome (ou ID)
-    navigation.navigate('DependentDetail', { dependentName: item.name });
+    navigation.navigate('DependentDetail', { dependentItem: item});
   };
 
   return (

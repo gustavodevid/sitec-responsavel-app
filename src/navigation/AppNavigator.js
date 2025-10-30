@@ -8,6 +8,7 @@ import ResetPasswordScreen from '../screens/ResetPasswordScreen/ResetPasswordScr
 import SuccessScreen from '../screens/SuccessScreen/SuccessScreen';
 import HomeScreen from '../screens/HomeScreen/HomeScreen';
 import ProfileScreen from '../screens/ProfileScreen/ProfileScreen';
+import DependentDetailScreen from '../screens/DependentDetailScreen/DependentDetailScreen';
 
 const Stack = createStackNavigator();
 
@@ -54,6 +55,11 @@ const AppNavigator = () => {
         <Stack.Screen 
         name="Profile" 
         component={ProfileScreen} 
+        />
+
+        <Stack.Screen 
+        name="DependentDetail" 
+        component={DependentDetailScreen} 
         />
 
       </Stack.Navigator>
